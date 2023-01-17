@@ -55,6 +55,7 @@ int main(int argc, char **argv)
 {
     Vehicle obj1;
     CParking obj2;
+    //Simulating Sensor Values manually
     int p1=40,p2=40,p3=100;
     bool gateOpen = false;
     ///obj1.HandleStates(p1,p2,p3,gateOpen);

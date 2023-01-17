@@ -1,0 +1,22 @@
+strict digraph {
+graph[directed="true",
+compound="true",
+rankdir="LR",
+remincross="true",
+ordering="out"];
+subgraph "cluster_Resource1"{
+  "Resource1"[color="#aaaacc",
+shape="none"];
+
+  "JFirstJob in priority J11"[label="JFirstJob in priority J11"];
+
+  "Jsecond in priority J12"[label="Jsecond in priority J12"];
+
+}
+"JFirstJob in priority J11" -> "Jsecond in priority J12"[len="10",
+constraint="True"];
+"P=10 J=5 d=0"[len="100",
+style="dashed"];
+"P=10 J=5 d=0" -> "JFirstJob in priority J11"[constraint="True",
+style="dashed"];
+}
